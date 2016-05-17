@@ -10,10 +10,10 @@ import UIKit
 
 class AACollageMaker: NSObject {
     
-    class func makeCollageForImageSizes(sizes: [CGSize], toFitInWidth width: CGFloat, inout resultHeight height: CGFloat, usingMargin margin: CGFloat = 0) -> Void -> [CGRect] {
+    class func makeCollageForImageSizes(sizes: [CGSize], toFitInWidth width: CGFloat, inout resultHeight height: CGFloat) -> CGFloat -> [CGRect] {
         let imageTree = makeTree(sizes.map { Container(size: $0) }.sort { $0.area > $1.area })
         height = imageTree.size.height / imageTree.size.width * width
-        return {
+        return { margin in
             return imageTree.fix().fit(toWidth: width).flatten().sort { $0.0.id < $1.0.id }.map { CGRectInset($1, margin / 2, margin / 2) }
         }
     }

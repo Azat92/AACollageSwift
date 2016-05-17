@@ -25,6 +25,7 @@
 		AA2438071CE7978400C20DD6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2437FE1CE7978400C20DD6 /* 7.jpg */; };
 		AA2438081CE7978400C20DD6 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2437FF1CE7978400C20DD6 /* 8.jpg */; };
 		AA2438091CE7978400C20DD6 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = AA2438001CE7978400C20DD6 /* 9.png */; };
+		AA2BCD6B1CEB1156003FF501 /* AACollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BCD6A1CEB1156003FF501 /* AACollageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		AA2437FE1CE7978400C20DD6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		AA2437FF1CE7978400C20DD6 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		AA2438001CE7978400C20DD6 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		AA2BCD6A1CEB1156003FF501 /* AACollageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACollageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				AA2437F31CE790C500C20DD6 /* AACollageTypes.swift */,
 				AA2437F51CE7918400C20DD6 /* TreeNode+Extended.swift */,
 				AA2437F11CE7904D00C20DD6 /* AACollageMaker.swift */,
+				AA2BCD6A1CEB1156003FF501 /* AACollageView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2BCD6B1CEB1156003FF501 /* AACollageView.swift in Sources */,
 				AA2437D31CE78D2F00C20DD6 /* ViewController.swift in Sources */,
 				AA2437F61CE7918400C20DD6 /* TreeNode+Extended.swift in Sources */,
 				AA2437D11CE78D2F00C20DD6 /* AppDelegate.swift in Sources */,
