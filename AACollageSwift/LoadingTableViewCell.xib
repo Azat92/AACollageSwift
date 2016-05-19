@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingTableViewCell" id="KGk-i7-Jjw" customClass="LoadingTableViewCell" customModule="AACollageSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fmf-xd-hGH">
+                        <rect key="frame" x="150" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ZOH-CF-aPT"/>
+                        </constraints>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fmf-xd-hGH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Y6A-bI-9Tp"/>
+                    <constraint firstAttribute="bottom" secondItem="fmf-xd-hGH" secondAttribute="bottom" constant="12" id="gYj-Yj-PCC"/>
+                    <constraint firstItem="fmf-xd-hGH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="z0X-6M-HBb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="indicator" destination="fmf-xd-hGH" id="ALl-74-8H4"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
