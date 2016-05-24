@@ -41,6 +41,9 @@ class AACollageView: UIView {
     }
     
     override func intrinsicContentSize() -> CGSize {
+        if let sv = superview where sv.frame.size.width > size.width {
+            size = sv.frame.size
+        }
         return self.size
     }
     
@@ -49,6 +52,9 @@ class AACollageView: UIView {
             return _size ?? CGSizeZero
         }
         set {
+            if let oldSize = _size where oldSize.width == newValue.width { //CGSizeEqualToSize(oldSize, newValue) {
+                return
+            }
             recalculate(withSize: newValue)
         }
     }
@@ -64,7 +70,7 @@ class AACollageView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        size = frame.size
+        size = superview?.frame.size ?? frame.size
         refreshCollage()
     }
     
